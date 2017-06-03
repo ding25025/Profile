@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="Style/MyStyle.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('ul li a').click(function() {
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+    });
+});
+</script>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> My Profile</title>
+</head>
+
+<body>
+    <hgroup>
+        <h1>Vicky.Wu</h1>
+        <h3>Taipei,Taiwan</h3>
+    </hgroup>
+    <nav>
+        <ul>
+            <li><a href="#About">關於我</a></li>
+            <li><a href="#Profile">經歷</a></li>
+            <li><a href="#Portfolio">相關作品</a></li>
+        </ul>
+    </nav>
+    <!-- about -->
+    <div id="About" class="content">
+        <article>
+            <figcaption>
+                <!-- The figure tag marks data (usually an image) that is part of the article -->
+                <img src="img/photo.jpg" />
+                <h2>關於我 </h2>
+                <div class="line"></div>
+                <p>
+                    畢業於慈濟大學 醫學資訊系，個性獨立、好相處、樂觀，喜歡大自然，樂於嘗試新事物，假日常做的休閒活動是爬山、游泳、騎腳踏車。
+                </p>
+                <p>畢業至今，已有多年寫程式的經驗，大部分為獨立作業，常使用的程式語言是ASP.NET C#、VB.NET， 常用的資料庫管理工具為MS SQL，在網頁開發上HTML、Java Script 也著墨不少，以及Webservice串接前後端的資料，網站架設則使用過IIS、Windows Server 2008、2012，過去幾年也有Android App 維護的相關經驗，因為有前後端的開發經驗，更能體會不同平台的設計方式。 </p>
+                <p>
+                    從畢業的研究助理到資深工程師，無論是擔任什麼職位，我認為最重要的是溝通，很多專案都是因為沒有足夠的溝通，而導致失敗。未來希望在工作上，可以增進專案管理的技巧，讓系統更加完善，提升系統的使用率。
+                </p>
+            </figcaption>
+        </article>
+    </div>
+    <div id="Profile" class="content">
+        <article>
+            <h2>經歷</h2>
+            <div class="line"></div>
+            <h4>2014/1~2017/3 新加坡易豐資訊</h4>
+            <p> 客戶需求訪談後，進行系統分析及功能開發，使用ASP.NET C#、VB.NET、webform、winform 開發醫院後勤系統，並使用WCF撰寫Webservice來串接前後端的資料，報表的開發使用過Crystal report，以及Android App的開發和維護。
+            </p>
+            <h4>2012/7~2013/11 鈦美科技</h4>
+            <p>醫療影像軟體系統的開發，主要是負責研發DICOM 相關的應用軟體以及開發新產品的使用介面及功能，開發語言為C#；由於是醫院所使用的系統，因此需要謹慎的分析介面的操作流程以及功能的實用性，還需了解醫學影像相關的知識，以及各家醫院的檢查流程，才能去設計出符合醫護人員使用的軟體，販賣軟體還需符合ISO13485...等相關法規，才能正式販賣，這份工作讓我學習到軟體從無到有的開發流程，在撰寫程式的技巧上也精進不少。 </p>
+            <h4>2011/11~2012/5 汎美達電信</h4>
+            <p>主要是負責撰寫後台的開發(Asp.net C#+MS SQL)，提供資料的API和前端的APP結合，並且撰寫行動網站，其實不同的專案，技術上都雷同，但在客製化的方面就必須要花點心思去設計和分析，最重要的是和客戶上的溝通，並在時程和技術上找到平衡點。</p>
+            <h4>2010/7~2011/7  慈濟大學 研究助理</h4>
+            <p>擔任老師的研究助理，老師給予的彈性很大，讓我實際到醫院參訪，研究醫護人員的放射腫瘤治療系統，學習到如何去了解醫護人員的需求，並根據需求來分析系統所運用到的相關技術(Sybase+Asp.net)，以及如何結合現有的數位學習平台(Moodle+My SQL)，讓我學到很多醫學知識，並思考不同的解決方式所造成的優缺點，不管遇到什麼技術困難，都必須要想辦法自行去解決。</p>
+        </article>
+    </div>
+    <div id="Portfolio" class="content">
+        <article>
+            <h2>相關作品</h2>
+            <div class="line"></div>
+            <a href="http://iair-tw.com/" target="_new">
+                <p>律泰科技官網設計 </p>
+            </a>
+        </article>
+    </div>
+    <footer>
+        <!-- Marking the footer section -->
+        <div class="line"></div>
+        <p>Copyright 2017 - WUYUTING.Profile</p>
+        <!-- Change the copyright notice -->
+        <a href="#" class="up">Go UP</a>
+    </footer>
+</body>
+
+</html>
