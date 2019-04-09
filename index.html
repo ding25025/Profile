@@ -1,5 +1,8 @@
 ﻿<!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="Style/MyStyle.css">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="Style/css/font-awesome.min.css" >
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -22,13 +25,18 @@ $(document).ready(function() {
         <h1>Vicky.Wu</h1>
         <h3>Taipei,Taiwan</h3>
     </hgroup>
-    <nav>
-        <ul>
-            <li><a href="#About">關於我</a></li>
-            <li><a href="#Profile">經歷</a></li>
-            <li><a href="#Portfolio">相關作品</a></li>
-        </ul>
-    </nav>
+   
+    <div id="mobilemenu">
+            <ul class="topnav">
+                    <li><a href="#About">關於我</a></li>
+                    <li><a href="#Profile">工作經歷</a></li>
+                    <li><a href="#Portfolio">網站架設作品</a></li>
+                    <li><a href="https://github.com/ding25025/" target="_new" >github</a></li>
+                    <li><a href="https://ytmind.wordpress.com/" target="_new" >個人網誌</a></li>
+                </ul>
+    </div>
+        
+   
     <!-- about -->
     <div id="About" class="content">
         <article>
@@ -38,11 +46,11 @@ $(document).ready(function() {
                 <h2>關於我 </h2>
                 <div class="line"></div>
                 <p>
-                    畢業於慈濟大學 醫學資訊系，個性獨立、好相處、樂觀，喜歡大自然，樂於嘗試新事物，假日常做的休閒活動是爬山、游泳、騎腳踏車。
+                    畢業於慈濟大學 醫學資訊系，個性獨立、好相處，喜歡大自然，樂於嘗試新事物，假日常做的休閒活動是爬山、游泳、騎腳踏車。
                 </p>
-                <p>畢業至今，已有多年寫程式的經驗，大部分為獨立作業，常使用的程式語言是ASP.NET C#、VB.NET， 常用的資料庫管理工具為MS SQL，在網頁開發上HTML、Java Script 也著墨不少，以及Webservice串接前後端的資料，網站架設則使用過IIS、Windows Server 2008、2012，過去幾年也有Android App 維護的相關經驗，因為有前後端的開發經驗，更能體會不同平台的設計方式。 </p>
+                <p>畢業至今，已有多年寫程式的經驗，大部分為獨立作業，常使用的程式語言是ASP.NET C#、VB.NET， 常用的資料庫管理工具為MS SQL，在網頁開發上HTML、JavaScript 也著墨不少，以及Webservice串接前後端的資料，網站架設則使用過IIS、Windows Server 2008、2012，過去幾年也有Android App 維護的相關經驗，因為有前後端的開發經驗，更能體會不同平台的設計方式。 </p>
                 <p>
-                    從畢業的研究助理到資深工程師，無論是擔任什麼職位，我認為最重要的是溝通，很多專案都是因為沒有足夠的溝通，而導致失敗。未來希望在工作上，可以增進專案管理的技巧，讓系統更加完善，提升系統的使用率。
+                    從畢業的研究助理到資深工程師，無論是擔任什麼職位，團隊合作是最重要的，良好的溝通才能開發出好的產品。未來希望在工作上，可以增進專案管理的技巧，讓系統更加完善，提升系統的使用率。
                 </p>
             </figcaption>
         </article>
@@ -51,6 +59,15 @@ $(document).ready(function() {
         <article>
             <h2>經歷</h2>
             <div class="line"></div>
+            <h4>2017/11~2018/9 泛宇電商</h4>           
+                <ul>
+                    　<li>客戶需求訪談</li>
+                    　<li>環保集點網站開發及維護，使用ASP.NET C# Entity  Framework/LINQ</li>
+                    　<li>撰寫服務程式處理資料</li>
+                    <li>Restful API 開發及維護</li>
+                    <li>Cordova  App  維護和開發</li>           
+                </ul>
+            
             <h4>2014/1~2017/3 新加坡易豐資訊</h4>
             <p> 客戶需求訪談後，進行系統分析及功能開發，使用ASP.NET C#、VB.NET、webform、winform 開發醫院後勤系統，並使用WCF撰寫Webservice來串接前後端的資料，報表的開發使用過Crystal report，以及Android App的開發和維護。
             </p>
@@ -64,9 +81,9 @@ $(document).ready(function() {
     </div>
     <div id="Portfolio" class="content">
         <article>
-            <h2>相關作品</h2>
+            <h2>網站架設作品</h2>
             <div class="line"></div>
-            <a href="http://iair-tw.com/" target="_new">
+            <a href="http://iairtw.com/" target="_new">
                 <p>律泰科技官網設計 </p>
             </a>
         </article>
@@ -74,7 +91,7 @@ $(document).ready(function() {
     <footer>
         <!-- Marking the footer section -->
         <div class="line"></div>
-        <p>Copyright 2017 - WUYUTING.Profile</p>
+        <p>Copyright 2019 - WUYUTING.Profile</p>
         <!-- Change the copyright notice -->
         <a href="#" class="up">Go UP</a>
     </footer>
