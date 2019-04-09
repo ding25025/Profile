@@ -137,7 +137,7 @@ figure {
 
 /*content*/
 .content {
-    padding: 50px 50px;
+  
     /*background: none repeat scroll 0 0 #F1F1F1;
 */
     
@@ -151,7 +151,7 @@ figure {
 article {
     background-color: #cbe3ed;
     margin: 3em 0;
-    padding: 20px;
+    padding: 5px;
 }
 .line {
     /* The dividing line: */
